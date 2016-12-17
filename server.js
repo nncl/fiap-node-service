@@ -7,8 +7,12 @@
 
  let express = require("express")
      , app = express()
+     , morgan = require('morgan')
      , bodyParser = require("body-parser")
      , port = 3000;
+
+// logs
+app.use(morgan('dev'));
 
 // cors stuff
 app.use(function(req, res, next) {
@@ -17,6 +21,7 @@ app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
     next();
 });
+
 app.options('*', function(req, res) {
     res.send(200);
 });

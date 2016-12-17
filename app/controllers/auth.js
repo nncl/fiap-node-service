@@ -8,14 +8,15 @@ app.get("/", (req, res)=>{
 });
 
 app.post("/", (req, res)=>{
-  let user = req.body;
+  let username = req.body.username;
 
   let data = {
     "msg" : "OK"
     , "success" : true
   };
 
-  res.json(data);
+  // res.json(data);
+  res.send(username);
 });
 
 module.exports = app;
