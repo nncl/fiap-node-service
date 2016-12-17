@@ -10,6 +10,17 @@
      bodyParser = require("body-parser"),
      port = 3000;
 
+// cors stuff
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header('Access-Control-Allow-Methods', 'POST, GET, PUT, DELETE, OPTIONS');
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
+    next();
+});
+app.options('*', function(req, res) {
+    res.send(200);
+});
+
 app.use(bodyParser.urlencoded({extend: false}));
 app.use(bodyParser.json());
 

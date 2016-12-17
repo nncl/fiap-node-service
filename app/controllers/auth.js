@@ -11,7 +11,7 @@ app.post("/", (req, res)=>{
   let user = req.body;
 
   let data = {
-    "msg" : "User received"
+    "msg" : "OK"
     , "success" : true
   };
 
