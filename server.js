@@ -5,10 +5,10 @@
 
  "use strict";
 
- let express = require("express"),
-     app = express(),
-     bodyParser = require("body-parser"),
-     port = 3000;
+ let express = require("express")
+     , app = express()
+     , bodyParser = require("body-parser")
+     , port = 3000;
 
 // cors stuff
 app.use(function(req, res, next) {
