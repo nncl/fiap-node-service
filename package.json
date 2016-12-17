@@ -1,0 +1,19 @@
+{
+  "name": "webservices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nncl/fiap-node-service.git"
+  },
+  "author": "nncl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nncl/fiap-node-service/issues"
+  },
+  "homepage": "https://github.com/nncl/fiap-node-service#readme"
+}
